@@ -54,9 +54,9 @@ Package.onUse(function (api) {
   api.addFiles("server/load.js", "server");
 
   // Private fixture data
-  api.addAssets("private/data/Products.json", "server");
-  api.addAssets("private/data/Shops.json", "server");
-  api.addAssets("private/data/Tags.json", "server");
+  api.addAssets("private/data/Products.json", "server", {isAsset:true});
+  api.addAssets("private/data/Shops.json", "server", {isAsset:true});
+  api.addAssets("private/data/Tags.json", "server", {isAsset:true});
 
 
   // Client files
